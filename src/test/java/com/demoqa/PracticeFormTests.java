@@ -24,7 +24,7 @@ public class PracticeFormTests {
         $("#subjectsInput").setValue("Computer").pressEnter();
         $("#subjectsInput").setValue("English").pressEnter();
         $("[for=hobbies-checkbox-1]").click();
-        $("#uploadPicture").uploadFile(new File("src/test/java/media/Hello.txt"));
+        $("#uploadPicture").uploadFromClasspath("Hello.txt");
         $("#currentAddress").setValue("Rostov-on-Don");
         $("#react-select-3-input").setValue("NCR").pressEnter();
         $("#react-select-4-input").setValue("Delhi").pressEnter();
